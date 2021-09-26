@@ -1,0 +1,24 @@
+.home-card{
+    cursor: pointer;
+    background-color: $primary;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    color: white;
+    p{
+        font-weight: 300;
+        font-size: 1.1rem;
+        margin-bottom: 0.3rem;
+    }
+    h3{
+        display: inline;
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+    }
+}
+
+.home-card:hover{
+    background-color: $hover;
+}

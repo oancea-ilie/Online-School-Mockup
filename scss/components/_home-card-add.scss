@@ -1,0 +1,19 @@
+.home-card-add{
+    cursor: pointer;
+    background-color: $primary;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    color: white;
+    p{
+        margin-left: 0.4rem;
+        display: inline-block;
+        font-weight: 300;
+        font-size: 1.1rem;
+    }
+}
+.home-card-add:hover{
+    background-color: $hover;
+}

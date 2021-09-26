@@ -1,0 +1,11 @@
+.course-details-main{
+    margin: 2rem 0 ;
+    @extend %pad;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    h1{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}

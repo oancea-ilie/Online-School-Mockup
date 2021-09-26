@@ -1,0 +1,30 @@
+.signup-buttons{
+    @include flex($disp:flex,$dir:null,$just:space-between ,$all:center);
+
+    a{
+        font-weight: bold;
+        text-align: center;
+        width: 47%;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 1rem;
+        border: 2px solid $primary;
+        background-color: $primary;
+        color: white;
+        padding: 0.4rem 1rem;
+        transition: .2s all;
+    }
+    a:hover{
+        background-color: rgb(20, 6, 37);
+    }
+    a:last-of-type{
+        border: 2px solid $primary;
+        background-color: white;
+        color: $primary;
+    }
+    a:last-of-type:hover{
+        background-color: $primary;
+        color: white;
+    }
+}

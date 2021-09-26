@@ -1,0 +1,20 @@
+.logsection{
+
+    a:first-of-type{
+        margin-right: 0.5rem;
+    }
+    a{
+        color: rgba(230, 230, 230, 0.849);
+        font-size: 1rem;
+    }
+
+    a:hover{
+        transition: .2s all;
+        color: white;
+    }
+    p{
+        display: inline-block;
+        color: white;
+        padding-right: 0.5rem;
+    }
+}

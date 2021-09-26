@@ -1,0 +1,17 @@
+.course-create-errors{
+    background-color: $dark-violet;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    p{
+        font-weight: bold;
+        color: rgb(156, 15, 15);
+        padding-bottom: 0.5rem;
+    }
+    ul{
+        margin-left: 1rem;
+        li:first-of-type{
+            padding-bottom: 0.5rem;
+        }
+    }
+}

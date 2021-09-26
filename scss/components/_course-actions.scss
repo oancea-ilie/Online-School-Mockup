@@ -1,0 +1,33 @@
+.course-actions{
+    @include flex($disp:flex,$dir:null,$just:center ,$all:center);
+    flex-wrap: wrap;
+    background-color: $dark-violet;
+    padding-bottom: 1rem;
+    a{
+        margin-right: 1rem;
+        font-weight: bold;
+        text-align: center;
+        width: 60%;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 1rem;
+        border: 2px solid $primary;
+        background-color: $primary;
+        color: white;
+        padding: 0.4rem 1rem;
+        transition: .2s all;
+    }
+    a:hover{
+        background-color: $hover
+    }
+    a:last-of-type{
+        border: 2px solid $primary;
+        background-color: white;
+        color: $primary;
+    }
+    a:last-of-type:hover{
+        background-color: $primary;
+        color: white;
+    }
+}

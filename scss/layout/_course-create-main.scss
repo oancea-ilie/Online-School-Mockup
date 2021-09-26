@@ -1,0 +1,11 @@
+.course-create-main{
+    @extend %pad;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
+    h1{
+        margin: 2rem;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}
