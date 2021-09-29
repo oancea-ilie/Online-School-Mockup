@@ -27,4 +27,17 @@
         background-color: $primary;
         color: white;
     }
+
+    
+    @include mq('md'){
+        a{
+            font-size: 1.3rem;
+        }
+    }
+
+    @include mq('lg'){
+        a{
+            font-size: 1.4rem;
+        }
+    }
 }

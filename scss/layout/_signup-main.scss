@@ -20,4 +20,45 @@
         outline: none;
         border-color: $primary;
     }
+
+    .erors{
+        p{
+            text-align: center;
+            color: red;
+        }
+
+        p:first-of-type{
+            color: rgb(13, 163, 13);
+        }
+    }
+
+    .erors{
+        display: none;
+    }
+
+    @include mq('md'){
+        width: 60%;
+        h1{
+            font-size: 2.2rem;
+        }
+        p{
+            font-size: 1.4rem;
+        }
+
+        input{
+            font-size: 1.3rem;
+        }
+    }
+    @include mq('lg'){
+        width: 40%;
+        h1{
+            font-size: 2.3rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+        input{
+            font-size: 1.4rem;
+        }
+    }
 }

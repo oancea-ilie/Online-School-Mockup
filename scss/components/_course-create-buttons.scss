@@ -1,5 +1,6 @@
 .course-create-buttons{
 
+    grid: course-create-buttons;
     @include flex($disp:flex,$dir:null,$just:space-between,$all:center);
     a{
         font-size: 0.8rem;
@@ -27,5 +28,21 @@
     a:last-of-type:hover{
         background-color: $primary;
         color: white;
+    }
+
+    @include mq('md'){
+        
+      a{
+          font-size: 1.1rem;
+          padding: 0.6rem 1rem;
+      }
+    }
+    @include mq('lg'){
+        justify-content: flex-start;
+
+        a{
+            width: 30%;
+            margin-right: 1.5rem;
+        }
     }
 }

@@ -12,4 +12,15 @@ header{
     a:hover{
         color: white;
     }
+
+    @include mq('md'){
+        a{
+            font-size: 1.8rem;
+        }
+    }
+    @include mq('lg'){
+        a{
+            font-size: 2rem;
+        }
+    }
 }

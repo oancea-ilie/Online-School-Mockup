@@ -1,4 +1,5 @@
 .course-create-details{
+    grid: course-create-details;
     p{
         font-size: 1.1rem;
         padding: 0.5rem 0;
@@ -15,9 +16,32 @@
         border: 1px solid grey;
     }
     textarea{
-        padding:0.4rem 0;
+        padding: 0.4rem;
         border-radius: 5px;
         width: 100%;
         border: 1px solid grey;
+    }
+
+    @include mq('md'){
+        p{
+            font-size: 1.3rem;
+        }
+        h5{
+            font-size: 1.3rem;
+        }
+        input{
+            padding: 0.6rem;
+        }
+        textarea{
+            padding: 0.6rem;
+        }
+    }
+    @include mq('lg'){
+        p{
+            font-size: 1.4rem;
+        }
+        h5{
+            font-size: 1.4rem;
+        }
     }
 }

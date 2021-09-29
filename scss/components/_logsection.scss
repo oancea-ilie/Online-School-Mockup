@@ -17,4 +17,21 @@
         color: white;
         padding-right: 0.5rem;
     }
+
+    @include mq('md'){
+        p{
+            font-size: 1.4rem;
+        }
+        a{
+            font-size: 1.2rem;
+        }
+    }
+    @include mq('lg'){
+        p{
+            font-size: 1.5rem;
+        }
+        a{
+            font-size: 1.3rem;
+        }
+    }
 }

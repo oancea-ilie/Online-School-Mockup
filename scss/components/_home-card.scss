@@ -17,8 +17,25 @@
         font-size: 1.3rem;
         padding-bottom: 1rem;
     }
-}
 
+    @include mq('md'){
+        p{
+            font-size: 1.3rem;
+        }
+        h3{
+            font-size: 1.4rem;
+        }
+    
+    }
+    @include mq('lg'){
+        p{
+            font-size: 1.4rem;
+        }
+        h3{
+            font-size: 1.6rem;
+        }
+    }
+}
 .home-card:hover{
     background-color: $hover;
 }

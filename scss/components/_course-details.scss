@@ -1,4 +1,5 @@
 .course-details{
+    grid-area: course-details;
 
     h3{
         font-size: 1rem;
@@ -17,5 +18,35 @@
     p{
         margin-bottom: 1.5rem;
         text-align: justify;
+        line-height: 1.5rem;
     }
+
+    @include mq('md'){
+        h3{
+            font-size: 1.4rem;
+        }
+        h5{
+            font-size: 1.2rem;
+        }
+        h1{
+            font-size: 1.8rem;
+        }
+        p{
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+        }
+    }
+    @include mq('lg'){
+        h5{
+            font-size: 1.4rem;
+        }
+        h1{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.3rem;
+            line-height: 2rem;
+        }
+    }
+
 }

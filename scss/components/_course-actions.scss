@@ -1,8 +1,12 @@
 .course-actions{
-    @include flex($disp:flex,$dir:null,$just:center ,$all:center);
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
     background-color: $dark-violet;
     padding-bottom: 1rem;
+
+
     a{
         margin-right: 1rem;
         font-weight: bold;
@@ -29,5 +33,18 @@
     a:last-of-type:hover{
         background-color: $primary;
         color: white;
+    }
+
+    @include mq('md'){
+        height: 130px;
+        grid-template-columns: 1fr 1fr;
+        a{
+            width: 80%;
+            font-size: 1.3rem;
+        }
+    }
+    @include mq('lg'){
+        height: 100px;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }

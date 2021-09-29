@@ -3,9 +3,28 @@
     @extend %pad;
     display: grid;
     grid-template-columns: 1fr;
-    
+    grid-template-areas: "h1" "course-details" "course-time";
+
     h1{
-        font-size: 1.6rem;
+        grid-area: h1;
         text-align: center;
     }
+
+
+    @include mq('md'){
+        grid-template-columns: 60% 32%;
+        grid-template-areas: 
+        "h1 h1"
+        "course-details course-time";
+        grid-row-gap: 2rem;
+        grid-column-gap: 4rem;
+
+        h1{
+            font-size: 2rem;
+        }
+    }
+    @include mq('lg'){
+        grid-template-columns: 70% 25%;
+    }
+
 }

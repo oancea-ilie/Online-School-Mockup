@@ -1,6 +1,5 @@
 .course-time-materials{
-
-
+    grid-area: course-time;
     h3{
         font-size: 1rem;
         font-weight: 400;
@@ -22,6 +21,41 @@
         margin-left: 1rem;
         li{
             font-size: 1.1rem;
+        }
+    }
+
+
+    @include mq('md'){
+        h3{
+            font-size: 1.4rem;
+        }
+        h1{
+            font-size: 1.8rem;
+        }
+        p{
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+        }
+        ul{
+            li{
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+    @include mq('lg'){
+        ul{
+            li{
+                font-size: 1.4rem;
+                line-height: 2rem;
+            }
+        }
+        h1{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.4rem;
+            line-height: 2rem;
         }
     }
 }

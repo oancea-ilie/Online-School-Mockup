@@ -1,5 +1,5 @@
 .course-create-time-materials{
-
+    grid: course-create-time;
 
     p{
         font-size: 1.1rem;
@@ -17,5 +17,28 @@
         border-radius: 5px;
         width: 100%;
         border: 1px solid grey;
+    }
+
+    @include mq('md'){
+        
+        p{
+            padding: 0.5rem 0;
+            font-size: 1.3rem;
+        }
+        p:last-of-type{
+            margin-top: 2.4rem;
+            margin-bottom: 0.4rem;
+        }
+        input{
+            padding: 0.6rem;
+        }
+        textarea{
+            padding: 0.6rem;
+        }
+    }
+    @include mq('lg'){
+        p{
+            font-size: 1.4rem;
+        }
     }
 }
